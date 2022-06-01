@@ -1,0 +1,57 @@
+.container_contact{
+    background-color: #b36afbef;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.datos_contact{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    div{
+        text-align: center;
+    }
+}
+
+.form{
+    width: 100%;
+    height: 600px;
+    padding: 10px;
+    .input{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+        label{
+            font-size: $font-mediun;
+        }
+        input{
+            
+            border-radius: 20px;
+            height: 40px;
+            border: none;
+            outline: none;
+            padding-left: 15px;
+        }
+     
+    }
+  
+}
+
+button{
+    cursor: pointer;
+    color: #9f25b5;
+    border-radius: 20px;
+    height: 40px;
+    font-weight: 600;
+    transition: .5s ease-in;
+    &:hover{
+        background-color:#aa35ee ;
+        color: white;
+
+    }
+  }
+
