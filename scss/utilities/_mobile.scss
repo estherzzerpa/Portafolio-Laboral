@@ -53,6 +53,7 @@
         position: relative;
     
     }
+    
 
     .opciones_menu{
         position: absolute;
@@ -61,7 +62,7 @@
         transition: .5s ease-in;
         z-index: 99;
         li{
-            width: 200px;
+            width: 300px;
             height: 40px;
             margin: 5px;
             border-radius: 3px;
@@ -73,8 +74,7 @@
     }
 
     .menu_active{
-        position: absolute;
-        left: 80%;
+        left: 72%;
     }
       
     .menu_hamburguesa{
@@ -115,7 +115,10 @@
             transform: rotate(-45deg) translate(9px, -13px);
         }
     }
-    
+    .container_perfil{
+        width: 300px;
+        height: 320px;
+    }
    
 }
 

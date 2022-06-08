@@ -519,7 +519,7 @@ button {
     transition: .5s ease-in;
     z-index: 99; }
     .opciones_menu li {
-      width: 200px;
+      width: 300px;
       height: 40px;
       margin: 5px;
       border-radius: 3px;
@@ -528,8 +528,7 @@ button {
       font-size: 25px;
       background-color: #8040b8; }
   .menu_active {
-    position: absolute;
-    left: 80%; }
+    left: 72%; }
   .menu_hamburguesa {
     cursor: pointer;
     position: absolute;
@@ -555,4 +554,7 @@ button {
       margin-left: -20px;
       opacity: 0; }
     .menu_hamburguesa .bars_efect-3 {
-      transform: rotate(-45deg) translate(9px, -13px); } }
+      transform: rotate(-45deg) translate(9px, -13px); }
+  .container_perfil {
+    width: 300px;
+    height: 320px; } }
