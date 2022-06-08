@@ -513,14 +513,17 @@ button {
     transition: .5s ease-in;
     z-index: 99; }
     .opciones_menu li {
-      width: 300px;
+      width: 200px;
+      height: 40px;
       margin: 5px;
       border-radius: 3px;
-      padding-left: 5px;
-      background-color: #680f86; }
+      padding-top: 6px;
+      padding-left: 6px;
+      font-size: 25px;
+      background-color: #8040b8; }
   .menu_active {
     position: absolute;
-    left: 85%; }
+    left: 80%; }
   .menu_hamburguesa {
     cursor: pointer;
     position: absolute;
