@@ -44,16 +44,16 @@ body::-webkit-scrollbar-thumb {
     transition: .5s ease;
     text-shadow: 1px 1px 1px rgba(86, 5, 126, 0.5); }
   .header li {
-    font-size: 30px;
+    font-size: 20px;
     transition: .5s ease;
     text-shadow: 1px 1px 1px rgba(86, 5, 126, 0.5);
-    width: 150px;
+    width: 100px;
     height: 50px;
     display: flex;
     justify-content: space-evenly; }
     .header li:hover {
       color: #490c7f;
-      font-size: 40px;
+      font-size: 23px;
       text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5); }
   .header span {
     font-size: 18px; }
@@ -61,7 +61,7 @@ body::-webkit-scrollbar-thumb {
 .wraper {
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(-225deg, #8d5cbed4 0%, #672981 48%, #8643c8 100%);
+  background-image: linear-gradient(-225deg, #a272d2d4 0%, #672981 48%, #a96be7 100%);
   display: flex;
   flex-direction: column;
   position: relative; }
@@ -69,7 +69,7 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     flex-direction: column;
     position: fixed;
-    left: 95%;
+    left: 92%;
     top: 70%;
     z-index: 1000; }
     .wraper .logos_contacto li {
@@ -163,7 +163,7 @@ button {
   margin-right: 100px;
   padding-top: 30px; }
   .info_personal .descripcion {
-    padding-top: 10px;
+    padding: 10px 0;
     font-size: 30px; }
     .info_personal .descripcion p {
       text-shadow: 1px 1px 1px rgba(86, 5, 126, 0.5); }
@@ -288,6 +288,21 @@ button {
   bottom: 50%;
   font-size: 20px; }
 
+.certificado {
+  display: block;
+  cursor: pointer;
+  color: #9f25b5;
+  border-radius: 20px;
+  height: 40px;
+  background-color: white;
+  width: 100px;
+  font-weight: 600;
+  transition: .5s ease-in;
+  text-align: center; }
+  .certificado:hover {
+    background-color: #aa35ee;
+    color: white; }
+
 .container_tech {
   background-color: #571f8ed4;
   width: 100%;
@@ -364,7 +379,8 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  margin: 20px; }
 
 .proyect_nth-child {
   cursor: pointer;
@@ -461,25 +477,23 @@ button {
       outline: none;
       padding-left: 15px; }
 
+.menu_responsive {
+  display: none; }
+
 @media screen and (max-width: 1029px) {
   .container_home {
     flex-direction: column;
     padding-left: 10px;
     justify-content: center;
-    align-items: center;
-    background-color: saddlebrown; }
+    align-items: center; }
   .info_personal {
     width: 400px;
     text-align: center;
     margin: 0; }
+  .container_about {
+    grid-template-columns: 1fr; }
   .segunda_colum {
-    width: 400px;
-    height: 400px;
-    background-color: aqua; }
-    .segunda_colum img {
-      padding-top: 120px;
-      border-radius: 50%;
-      float: right; }
+    display: none; }
   .text_eslogan h1 {
     font-size: 30px;
     padding: 30px; }
@@ -488,4 +502,48 @@ button {
 
 @media screen and (max-width: 820px) {
   .header li {
-    display: none; } }
+    display: none; }
+  .menu_responsive {
+    display: block;
+    position: relative; }
+  .opciones_menu {
+    position: absolute;
+    left: 100%;
+    margin-top: 50px;
+    transition: .5s ease-in;
+    z-index: 99; }
+    .opciones_menu li {
+      width: 300px;
+      margin: 5px;
+      border-radius: 3px;
+      padding-left: 5px;
+      background-color: #680f86; }
+  .menu_active {
+    position: absolute;
+    left: 85%; }
+  .menu_hamburguesa {
+    cursor: pointer;
+    position: absolute;
+    margin-top: 20px;
+    left: 93%;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px; }
+    .menu_hamburguesa span {
+      width: 30px;
+      height: 2px;
+      margin: 4px;
+      margin-top: 2px;
+      background-color: #fcecfb;
+      transition: .5s ease-in; }
+    .menu_hamburguesa .bars_efect-1 {
+      transform: rotate(45deg) translate(-2px, 2px); }
+    .menu_hamburguesa .bars_efect-2 {
+      margin-left: -20px;
+      opacity: 0; }
+    .menu_hamburguesa .bars_efect-3 {
+      transform: rotate(-45deg) translate(9px, -13px); } }

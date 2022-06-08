@@ -1,27 +1,25 @@
+.menu_responsive{
+    display: none;
+}
+
+
 @media screen and(max-width: 1029px) {
     .container_home{
         flex-direction: column;
         padding-left: 10px;
         justify-content: center;
         align-items: center;
-        background-color: saddlebrown;
     }
     .info_personal{
         width: 400px;
         text-align: center;
         margin: 0;
     }
-
+    .container_about{
+        grid-template-columns: 1fr;
+    }
     .segunda_colum{
-        width: 400px;
-        height: 400px;
-     
-        img{
-            padding-top: 120px;
-            border-radius: 50%;
-            float: right;
-        }
-        background-color: aqua;
+        display: none;
       
     }
 
@@ -42,5 +40,72 @@
     .header li{
         display: none;
     }
+
+    .menu_responsive{
+        display: block;
+        position: relative;
+    
+    }
+
+    .opciones_menu{
+        position: absolute;
+        left: 100%;
+        margin-top: 50px;
+        transition: .5s ease-in;
+        z-index: 99;
+        li{
+            width: 300px;
+            margin: 5px;
+            border-radius: 3px;
+            padding-left: 5px;
+            background-color: rgb(104, 15, 134);
+        }
+    }
+
+    .menu_active{
+        position: absolute;
+        left: 85%;
+    }
+      
+    .menu_hamburguesa{
+        cursor: pointer;
+        position: absolute;
+        margin-top: 20px;
+        left: 93%;
+        z-index: 999;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 45px;
+        height: 45px;
+        
+        // filter: blur(4);
+        // backdrop-filter: blur(4px);
+        // background-color: rgba(151, 102, 214, 0.196);
+        // box-shadow: inset 10px 10px 37px rgba(245, 203, 255, 0.414);
+        // border-radius: 50%;
+        span{
+            width: 30px;
+            height: 2px;
+            margin: 4px;
+            margin-top: 2px;
+            background-color: $primary-color-letras;
+            transition: .5s ease-in;
+        }
+        .bars_efect-1{
+            transform: rotate(45deg) translate(-2px, 2px);
+        }
+
+        .bars_efect-2{
+            margin-left: -20px;
+            opacity: 0;
+        }
+        .bars_efect-3{
+            transform: rotate(-45deg) translate(9px, -13px);
+        }
+    }
+    
+   
 }
 
