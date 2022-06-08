@@ -253,6 +253,8 @@ button {
   .primer_colum p {
     padding: 10px 0;
     font-size: 20px; }
+  .primer_colum p > a {
+    text-decoration: underline; }
 
 .segunda_colum {
   display: flex;
