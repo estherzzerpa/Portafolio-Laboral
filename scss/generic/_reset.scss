@@ -17,7 +17,7 @@ body,html{
     // color: rgba(216, 3, 67, 0.72);
     // color: #5545e5;
     color: #fcecfb;
-    text-shadow: 1px 1px 1px rgba(#8d5079,  .5);
+    text-shadow: $text-shadow; 
     font-family: 'Zen Loop', cursive;
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -38,10 +38,10 @@ h1,h2{
 
 
 body::-webkit-scrollbar{
-    width: 7px;
-    border-radius: 8px;
+    width: 4px;
 }
 body::-webkit-scrollbar-thumb{
-    background-color:#f3b5df;
+    background-color:#e4b5f3;
+    border-radius: 8px;
 }
 

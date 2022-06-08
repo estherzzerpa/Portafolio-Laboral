@@ -1,7 +1,7 @@
 .wraper{
-    width: 100vw;
-    height: 100vh;
-    background-image: linear-gradient(-225deg, #763cb1d4 0%, #d9bbe7 48%, #7139a9 100%);
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(-225deg, #8d5cbed4 0%, #672981 48%, #8643c8 100%);
     display: flex;
     flex-direction: column;
     position: relative;
@@ -43,35 +43,39 @@
 
 .container_home{
     display: flex;
+    padding-bottom: 60px;
 }
-.container_perfil{
+.primer_columna-home{
     height: 100%;
-    z-index: 2;
-    height: 500px;  
-    .card_img{
-        position: relative;
-        animation: flotar 5s linear infinite;
-        border-radius: 50%;
-        box-shadow: 10px 10px 20px rgba(184, 127, 195, 0.641);
-        cursor: pointer;
-        transition: .6s ease-in;
-        overflow: hidden;
-        width: 300px;
-        height: 320px;
-        img{
-            width: 100%;
-            height: 100%;
-            transition: all .5s ease-in-out;
-        }
-        &:hover .container_name{
-            left: -45%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-        }
-        &:hover img{
-            width: 340px;
-            height: 360px;
-        }
+
+.container_perfil{
+    z-index: 2;
+    width: 340px;
+    height: 360px;
+    position: relative;
+    animation: flotar 5s linear infinite;
+    box-shadow: 10px 10px 20px rgba(184, 127, 195, 0.641);
+    cursor: pointer;
+    transition: .6s ease-in;
+    overflow: hidden;
+    border-radius: 50%;
+    &:hover .container_name{
+        left: -35%;
+
     }
+  
+    .card_img{
+        width: 100%;
+        height: 100%;
+    }
+
+}
 
     .container_name{ 
         transition: all .5s ease-in-out;
@@ -80,8 +84,8 @@
         text-align: center;
         padding-top: 90px;
         transform:rotateZ(-90deg) ;
-        width: 125%;
-        height: 150px;
+        width: 110%;
+        height: 180px;
         position: absolute;
         top:25%;
         left: -95%;
@@ -95,13 +99,13 @@
     } 
 
     button{
-        transform: translate(100%,90%);
+        margin-top: 80px;
         width: 200px;
         height: 50px;
         border-radius: 20px;
         box-shadow: 10px 10px 20px rgba(223, 190, 230, 0.641);
         cursor: pointer;
-        font-family: 'Zen Loop', cursive;
+        font-family:$font-family;
         color: #9f25b5;
         font-size: $font-mediun;
         transition: .5s ease-in;
@@ -110,24 +114,27 @@
             color:white;
         }
     } 
-}
+
 .info_personal{
-    color: #fcecfb;
-    text-shadow: 1px 1px 1px rgba(#c4549e,  .5);    width: 600px;
-    height: 400px;
-    position: absolute;
-    // padding-top: 60px;
-    top: 20%;
-    left: 40%;
+    color: #fbecfc;
+    text-shadow: $text-shadow; 
     z-index: 3;
-    margin-left: 30px;
+    height: 70%;
+    width: 80%;
+    margin-right: 100px;
+    padding-top: 30px;
+    .descripcion{
+        padding-top: 10px;
+        font-size: $font-mediun;
+        p{
+            text-shadow:$text-shadow; 
+        }
+    }
+    a{
+        text-decoration: underline;
+        color: #d8a6f1;
+    }
 }
-
-.descripcion{
-    padding-top: 10px;
-    font-size: $font-mediun;
-}
-
 
 .burbujas{
     div{
@@ -203,19 +210,19 @@
 
 @keyframes flotar{
     0%{
-        transform: translate(50%,10%);
+        transform: translateY(10%);
     }
     35%{
-        transform: translate(50%,12%);
+        transform: translateY(12%);
     }
     60%{
-        transform: translate(50%,10%);
+        transform: translateY(10%);
     }
     85%{
-        transform: translate(50%,8%);
+        transform: translateY(8%);
     }
     100%{
-        transform: translate(50%,10%);
+        transform: translateY(10%);
     }
 }
 

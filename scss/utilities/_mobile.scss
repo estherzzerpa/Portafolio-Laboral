@@ -1,0 +1,46 @@
+@media screen and(max-width: 1029px) {
+    .container_home{
+        flex-direction: column;
+        padding-left: 10px;
+        justify-content: center;
+        align-items: center;
+        background-color: saddlebrown;
+    }
+    .info_personal{
+        width: 400px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .segunda_colum{
+        width: 400px;
+        height: 400px;
+     
+        img{
+            padding-top: 120px;
+            border-radius: 50%;
+            float: right;
+        }
+        background-color: aqua;
+      
+    }
+
+    .text_eslogan{
+     h1{
+            font-size: $font-mediun;
+            padding: 30px;
+     }
+     p{
+         bottom: 30%;
+     }
+    }
+
+}
+
+@media screen and(max-width: 820px) {
+
+    .header li{
+        display: none;
+    }
+}
+

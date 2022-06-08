@@ -6,6 +6,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+button{
+    cursor: pointer;
+    color: #9f25b5;
+    border-radius: 20px;
+    height: 40px;
+    font-weight: 600;
+    transition: .5s ease-in;
+    &:hover{
+        background-color:#aa35ee ;
+        color: white;
+    }
+  }
 }
 .datos_contact{
     display: flex;
@@ -41,17 +54,4 @@
   
 }
 
-button{
-    cursor: pointer;
-    color: #9f25b5;
-    border-radius: 20px;
-    height: 40px;
-    font-weight: 600;
-    transition: .5s ease-in;
-    &:hover{
-        background-color:#aa35ee ;
-        color: white;
-
-    }
-  }
 

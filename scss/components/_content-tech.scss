@@ -18,17 +18,17 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
-    justify-content: space-around;
-    padding-bottom: 15px;
     border-radius: 50%;
+    justify-content: space-evenly;
     margin: 30px;
-    width: 200px;
-    height: 200px;
-    filter: blur(3);
-    backdrop-filter: blur(3px);
+    padding: 20px;
+    width: 250px;
+    height: 250px;
+    filter: blur(4);
+    backdrop-filter: blur(4px);
     background-color: rgba(135, 87, 198, 0.22);
     box-shadow: 3px 50px 47px -30px rgba(51, 12, 61, 0.86), inset 25px 25px 40px rgba(232, 169, 248, 0.414);
-    transition: 1s;
+    transition: 1s ease-in;
     img{
         width: 35px;
         padding: 2px;
@@ -41,23 +41,27 @@
     &:hover{
         box-shadow: 3px 50px 47px -30px rgba(171, 131, 182, 0.86), inset 10px 5px 30px 20px rgba(242, 209, 251, 0.414);
     }
+    h4, p{
+        text-shadow: $text-shadow;
+        font-size: 20px;
+    }
 }
 
 @keyframes flota{
     0%{
-        transform: translate(5%,10%);
+        transform: translateY(10%);
     }
     30%{
-        transform: translate(5%,15%);
+        transform: translateY(15%);
     }
     55%{
-        transform: translate(5%,12%);
+        transform: translateY(12%);
     }
     80%{
-        transform: translate(5%,10%);
+        transform: translateY(10%);
     }
     100%{
-        transform: translate(5%,10%);
+        transform: translateY(10%);
     }
 }
 

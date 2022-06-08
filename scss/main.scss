@@ -1,12 +1,12 @@
-@import "variables";
-@import "reset";
-@import "header";
-@import "content-home";
-@import "content-about";
-@import "content-tech";
-@import "content-proyects";
-@import "content-contact";
-
+@import "generic/variables";
+@import "generic/reset";
+@import "components/header";
+@import "components/content-home";
+@import "components/content-about";
+@import "components/content-tech";
+@import "components/content-proyects";
+@import "components/content-contact";
+@import "utilities/mobile";
 
 
 
