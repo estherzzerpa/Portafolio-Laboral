@@ -22,9 +22,9 @@
         display: flex;
         justify-content: space-evenly;
         &:hover{
-            color: rgb(73, 12, 127);
+            color: rgb(230, 211, 247);
             font-size: 23px;    
-            text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);   
+            text-shadow: 2px 2px 15px rgba(203, 123, 212, 0.679), 2px 2px 15px rgba(199, 109, 232, 0.45);   
         }
     }
     span{

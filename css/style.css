@@ -52,9 +52,9 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: space-evenly; }
     .header li:hover {
-      color: #490c7f;
+      color: #e6d3f7;
       font-size: 23px;
-      text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5); }
+      text-shadow: 2px 2px 15px rgba(203, 123, 212, 0.679), 2px 2px 15px rgba(199, 109, 232, 0.45); }
   .header span {
     font-size: 18px; }
 
@@ -147,12 +147,15 @@ button {
   box-shadow: 10px 10px 20px rgba(223, 190, 230, 0.641);
   cursor: pointer;
   font-family: "Zen Loop", cursive;
-  color: #9f25b5;
   font-size: 30px;
   transition: .5s ease-in; }
   button:hover {
     background-color: #aa35ee;
     color: white; }
+  button a {
+    color: #9f25b5; }
+    button a:hover {
+      color: white; }
 
 .info_personal {
   color: #fbecfc;
@@ -257,19 +260,22 @@ button {
     text-decoration: underline; }
 
 .segunda_colum {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   position: relative;
   cursor: pointer;
   overflow: hidden; }
-  .segunda_colum img {
+  .segunda_colum picture {
+    transition: .5s ease all;
     height: 100%;
-    width: 100%;
-    transition: .5s ease-in; }
-  .segunda_colum:hover img {
-    transform: scale(1.1); }
+    display: inline-block;
+    background-color: #8433b6d4; }
+    .segunda_colum picture:hover img {
+      transform: scale(1.1); }
+    .segunda_colum picture img {
+      height: 100%;
+      width: 100%;
+      transition: .5s ease all;
+      mix-blend-mode: multiply;
+      filter: grayscale(100%); }
 
 .text_eslogan h1, .text_eslogan p {
   position: absolute;

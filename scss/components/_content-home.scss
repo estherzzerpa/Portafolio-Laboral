@@ -67,7 +67,6 @@
     border-radius: 50%;
     &:hover .container_name{
         left: -35%;
-
     }
   
     .card_img{
@@ -106,12 +105,17 @@
         box-shadow: 10px 10px 20px rgba(223, 190, 230, 0.641);
         cursor: pointer;
         font-family:$font-family;
-        color: #9f25b5;
         font-size: $font-mediun;
         transition: .5s ease-in;
         &:hover{
             background-color:#aa35ee ;
             color:white;
+        }
+        a{
+            color: #9f25b5; 
+            &:hover{
+                color:white;
+            }
         }
     } 
 
